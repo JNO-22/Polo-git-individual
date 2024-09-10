@@ -9,6 +9,13 @@ body {
     align-items: center;
 }
 
+.card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -17,14 +24,14 @@ form {
     margin-bottom: 20px;
 }
 
-input { 
+input {
     padding: 10px;
     border-radius: 5px;
     border: none;
     transition: box-shadow 0.3s ease;  /* Agregamos transición a los campos */
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
     background-color: #f5f5f5;
     color: #333;
     cursor: pointer;
@@ -35,6 +42,13 @@ input:hover, input[type="submit"]:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);  /* Sombra al hacer hover */
 }
 
-input[type="submit"]:hover {
-    background-color: #f1f382;  /* Ya lo tenías, cambiamos solo el color */
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #f1f382;
+    transition: 0.2s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
 }
